@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+}
+.cards {
+    width: 47rem;
+}
+.firstcard {
+    background-color: #fff;
+    padding: 2rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 16rem;
+    color: hsl(175deg 44% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.firstcard h1 {
+    margin-bottom: 1rem;
+}
+.firstcard i {
+    color: hsl(70deg 63% 59%);
+    font-size: 1.5rem;
+}
+.firstcard p {
+    margin-top: 1rem;
+    color: hsl(230deg 10% 77%);
+}
+.downcard {
+    display: flex;
+}
+.cardone,.cardtwo {
+
+    height: 16rem;
+
+}
+.cardone {
+    background-color: #2bb3b1;
+    border-bottom-left-radius: 15px;
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+
+
+}
+.cardtwo {
+    background-color: #4abebd;
+    border-bottom-right-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+.cardtwo h3 {
+    align-self: flex-start;
+}
+.cardtwo p {
+    white-space: pre-line;
+    margin-left: -97px;
+
+}
+button {
+    width: 15rem;
+    height: 3rem;
+    background: #bfdf32;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+.price {
+    color: #74dadc;
+    font-size: 16px;
+}
+.cardone span:not(.price) {
+    font-size: 3rem;
+}
+@media (max-width : 767px) {
+
+.cards {
+    width: 22rem;
+}
+.downcard {
+    flex-direction: column;
+}
+.firstcard,.cardone,.cardtwo {
+    width: 100%;
+    border-radius: unset;
+    border-radius: 5px;
+}
+.firstcard h1 {
+    font-size: 1.5rem;
+}
+
+.firstcard i {
+    color: hsl(70deg 63% 59%);
+    font-size: 1.1rem;
+}
+
+
+
+}
+
